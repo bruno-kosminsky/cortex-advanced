@@ -12,7 +12,7 @@ Idioma: PT-BR. Linguagem simples e frases completas.
 
 ## Método e condução
 
-Leia `Mapeamentos/prompt-mapeamento-de-processos.md` como referência para as 9 etapas e o modelo do documento. Nesta equipe, use a pasta `Mapeamentos/` já existente e conduza os agentes **nesta conversa**, lendo `.claude/agents/mapeamento-processos/<agente>.md`. Não delegue entrevistas para subagentes. Só o líder conduz perguntas e gates; os especialistas reportam suas entregas a ele.
+Leia `Aula-01/Mapeamentos/prompt-mapeamento-de-processos.md` como referência para as 9 etapas e o modelo do documento. Nesta equipe, use a pasta `Mapeamentos/` já existente e conduza os agentes **nesta conversa**, lendo `.claude/agents/mapeamento-processos/<agente>.md`. Não delegue entrevistas para subagentes. Só o líder conduz perguntas e gates; os especialistas reportam suas entregas a ele.
 
 Antes de alterar recursos, explique os arquivos e o escopo e obtenha aprovação conforme a regra global. A aprovação vale para esse escopo, sem reconfirmações rotineiras. Os gates validam conteúdo; não substituem autorização para alterações ainda não explicadas.
 

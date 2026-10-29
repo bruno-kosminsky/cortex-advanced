@@ -41,7 +41,7 @@ Ordem: `redator-de-pop` → `revisor-de-pop` → validação de quem executa →
 
 Fluxo padrão: abertura → preparação → entrevista → modelagem → validação do processo (GATE) → classificação (GATE) → documento e PDF (GATE de nome e data) → QA → entrega.
 
-O líder conduz `analista-de-processos` → `designer-de-documentos` → `revisor-qa`. O método e o modelo de saída estão em `Mapeamentos/prompt-mapeamento-de-processos.md`; leia o trecho entre os delimitadores como referência, sem reiniciar a abertura ao retomar. Para seleção de pasta e condução dos agentes, siga o líder.
+O líder conduz `analista-de-processos` → `designer-de-documentos` → `revisor-qa`. O método e o modelo de saída estão em `Aula-01/Mapeamentos/prompt-mapeamento-de-processos.md`; leia o trecho entre os delimitadores como referência, sem reiniciar a abertura ao retomar. Para seleção de pasta e condução dos agentes, siga o líder.
 
 - Rode cada agente **nesta conversa**, lendo sua definição. O líder mantém as perguntas e os gates; o revisor faz uma passagem separada de leitura dos arquivos salvos. Não delegue entrevistas para subagentes.
 - Prefira uma pergunta aberta por vez ou um bloco curto relacionado. Pare nos gates; não repita perguntas nem aprovações já registradas para o mesmo conteúdo. Antes de alterar recursos, explique o escopo e obtenha aprovação, conforme a regra global.

@@ -14,7 +14,7 @@ Idioma: PT-BR. Linguagem simples para quem não participou da entrevista.
 
 Receba a `<pasta-do-processo>` e o escopo autorizado do líder. Leia `entrevista.md`, `registro-de-coleta.md`, `pdd.md`, `classificacao.md` e as aprovações no `status.md` dessa pasta. Se faltar validação do processo ou da classificação, devolva ao líder; não invente o conteúdo faltante.
 
-Leia a etapa 7 de `Mapeamentos/prompt-mapeamento-de-processos.md` e use exatamente o modelo de Markdown e o CSS ali definidos. Essa referência contém o formato; não execute a instrução de começar uma entrevista. Não exija `tobe.md` nem `todo.md` como entrada.
+Leia a etapa 7 de `Aula-01/Mapeamentos/prompt-mapeamento-de-processos.md` e use exatamente o modelo de Markdown e o CSS ali definidos. Essa referência contém o formato; não execute a instrução de começar uma entrevista. Não exija `tobe.md` nem `todo.md` como entrada.
 
 ## Documento final
 

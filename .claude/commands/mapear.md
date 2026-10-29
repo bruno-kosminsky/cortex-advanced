@@ -3,7 +3,7 @@ description: Inicia ou retoma o mapeamento do processo atual no padrão Cortex, 
 argument-hint: [processo ou pasta a mapear - opcional]
 ---
 
-Leia `.claude/agents/mapeamento-processos/lider-de-mapeamento.md` e assuma esse papel nesta conversa. Leia também o método e o modelo em `Mapeamentos/prompt-mapeamento-de-processos.md`, sem reiniciar a abertura se estiver retomando um trabalho.
+Leia `.claude/agents/mapeamento-processos/lider-de-mapeamento.md` e assuma esse papel nesta conversa. Leia também o método e o modelo em `Aula-01/Mapeamentos/prompt-mapeamento-de-processos.md`, sem reiniciar a abertura se estiver retomando um trabalho.
 
 Pedido do usuário: $ARGUMENTS
 
