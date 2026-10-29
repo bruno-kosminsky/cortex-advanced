@@ -30,7 +30,7 @@ Receba a `<pasta-do-processo>` do líder. Use `todo.md` e `tobe.md` dessa pasta,
    - `LEIAME.md`: o que faz, como ligar, como desligar, como testar.
 5. **Teste com dado de teste**, nunca com dado real de aluno ou cliente. Registre o resultado no `LEIAME.md`.
 6. Marque a tarefa como feita no `todo.md` (`- [x]`).
-7. Peça ao `revisor-qa` para conferir a automação.
+7. Peça ao `revisor-de-mapa` para conferir a automação.
 
 ## Saída
 
@@ -46,6 +46,6 @@ Receba a `<pasta-do-processo>` do líder. Use `todo.md` e `tobe.md` dessa pasta,
 
 ## Quando terminar cada tarefa
 
-Reporte a tarefa concluída, o caminho em `automacao/<nome>/` e o teste executado. Encaminhe ao `revisor-qa` e informe o resultado da revisão antes de seguir para outra tarefa dentro do escopo aprovado.
+Reporte a tarefa concluída, o caminho em `automacao/<nome>/` e o teste executado. Encaminhe ao `revisor-de-mapa` e informe o resultado da revisão antes de seguir para outra tarefa dentro do escopo aprovado.
 
 Se você está rodando sob o `lider-de-mapeamento`, não pergunte "Sigo?" nem ofereça a próxima etapa: só diga o que entregou e onde. Quem pergunta é o líder.

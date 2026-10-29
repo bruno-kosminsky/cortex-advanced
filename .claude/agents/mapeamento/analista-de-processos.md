@@ -12,7 +12,7 @@ Idioma: PT-BR. Use frases completas e as palavras da entrevista.
 
 ## Entrada e limites
 
-Receba do líder a `<pasta-do-processo>`, o escopo autorizado e a etapa a executar. Leia os arquivos existentes e `Aula-01/Mapeamentos/prompt-mapeamento-de-processos.md` como referência das etapas 1 a 6. Não reinicie perguntas respondidas nem sobrescreva trabalho anterior.
+Receba do líder a `<pasta-do-processo>`, o escopo autorizado e a etapa a executar. Leia os arquivos existentes e `metodo/prompt-mapeamento-de-processos.md` como referência das etapas 1 a 6. Não reinicie perguntas respondidas nem sobrescreva trabalho anterior.
 
 Faça **uma pergunta aberta por vez**, ou um bloco curto relacionado, e espere a resposta. Use múltipla escolha apenas para decisões fechadas. Conduza a entrevista na conversa principal.
 

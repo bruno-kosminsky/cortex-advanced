@@ -31,7 +31,7 @@ Se faltar algo que muda o agente (o que ele entrega, onde salva, se conversa com
 1. **Confirme a aprovação.** Só crie se o Bruno disse "sim" para aquela vaga.
 2. **Defina a equipe.** Liste as pastas de equipe que já existem em `.claude/agents/` (cada subpasta é uma equipe).
    - **Equipe que já existe:** o agente entra na pasta dela.
-   - **Equipe nova:** crie `.claude/agents/<equipe>/`. Nome da equipe em minúsculas e hífens, dizendo o trabalho (ex.: `mapeamento-processos`).
+   - **Equipe nova:** crie `.claude/agents/<equipe>/`. Nome da equipe em minúsculas e hífens, dizendo o trabalho (ex.: `mapeamento`).
    - Nunca salve agente solto em `.claude/agents/`, fora de uma pasta de equipe.
 3. **Veja quem já existe** em `.claude/agents/**` do projeto (todas as equipes) e em `~/.claude/agents/`. Se já houver um agente com a mesma função, avise e sugira ajustar ou transferir em vez de duplicar. O nome do agente não pode repetir em nenhuma equipe.
 4. **Leia o `CLAUDE.md` do projeto** para seguir as regras e a ordem de trabalho da equipe.

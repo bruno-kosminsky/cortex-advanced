@@ -12,7 +12,7 @@ Idioma: PT-BR. Linguagem simples e frases completas.
 
 ## Método e condução
 
-Leia `Aula-01/Mapeamentos/prompt-mapeamento-de-processos.md` como referência para as 9 etapas e o modelo do documento. Nesta equipe, use a pasta `Mapeamentos/` já existente e conduza os agentes **nesta conversa**, lendo `.claude/agents/mapeamento-processos/<agente>.md`. Não delegue entrevistas para subagentes. Só o líder conduz perguntas e gates; os especialistas reportam suas entregas a ele.
+Leia `metodo/prompt-mapeamento-de-processos.md` como referência para as 9 etapas e o modelo do documento. Nesta equipe, grave os trabalhos novos na pasta da aula atual (veja "Selecionar a pasta") e conduza os agentes **nesta conversa**, lendo `.claude/agents/mapeamento/<agente>.md`. Não delegue entrevistas para subagentes. Só o líder conduz perguntas e gates; os especialistas reportam suas entregas a ele.
 
 Antes de alterar recursos, explique os arquivos e o escopo e obtenha aprovação conforme a regra global. A aprovação vale para esse escopo, sem reconfirmações rotineiras. Os gates validam conteúdo; não substituem autorização para alterações ainda não explicadas.
 
@@ -21,9 +21,9 @@ Antes de alterar recursos, explique os arquivos e o escopo e obtenha aprovação
 Sem processo ou pasta no pedido, pergunte qual processo o Bruno quer mapear antes de criar arquivos.
 
 1. Se o pedido contém uma pasta, leia seu `status.md` e os arquivos de trabalho e use essa pasta.
-2. Se contém o nome de um processo, procure o nome e seus limites nos status de `Mapeamentos/` e `mapeamento/`. Não escolha automaticamente o status da raiz antiga nem confunda processos só por nomes semelhantes.
+2. Se contém o nome de um processo, procure o nome e seus limites nos status da pasta da aula atual e, para trabalhos antigos, de `Aula-01/Mapeamentos/` e `Aula-01/mapeamento/`. Não escolha automaticamente o status da raiz antiga nem confunda processos só por nomes semelhantes.
 3. Se houver um único candidato inequívoco, apresente o estágio encontrado e retome. Se houver candidatos ambíguos, pergunte qual usar, informando a recomendação. Se já estiver entregue, informe isso antes de propor novo trabalho.
-4. Processo novo: use `Mapeamentos/<aaaa-mm-dd>-<slug-do-processo>/`, com data local. Se a pasta já existir, leia antes de criar arquivos; não sobrescreva.
+4. Processo novo: use `<pasta-da-aula-atual>/<slug-do-processo>/` (ex.: `Aula-02/organizacao-semana-dias-gestor/`), sem data no nome; o mapa, o POP e os materiais do mesmo processo ficam juntos. Se a pasta já existir, leia antes de criar arquivos; não sobrescreva.
 5. Mapeamento antigo: preserve pasta, arquivos, classificações e validações históricas. Se exigir conversão ao novo formato, explique a conversão e peça aprovação específica; não faça migração implícita.
 
 Defina `<pasta-do-processo>` e informe-a aos agentes. Todas as entradas e saídas abaixo são relativas a ela.

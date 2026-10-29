@@ -1,5 +1,5 @@
 ---
-name: revisor-de-pop
+name: revisar-pop
 description: Use depois que o redator-de-pop entregar o pop.md. Revisa em modo somente leitura se o POP permite executar e controlar o processo descrito no mapa. Reporta Aprovado ou Devolver, com arquivo e linha.
 tools: Read, Glob, Grep
 model: inherit

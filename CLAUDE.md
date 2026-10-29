@@ -15,16 +15,14 @@ Cada equipe (squad) é uma pasta em `.claude/agents/<equipe>/`. Para levar uma e
 | `rh` | Mapeia as equipes do projeto e escreve o pedido de vaga de quem falta, dizendo a equipe. Não cria agentes | `relatorio-rh-<projeto>.md` |
 | `construtor-de-agentes` | Cria (contrata) os agentes pedidos pelo RH, depois do "sim" do Bruno, sempre dentro da pasta da equipe | `.claude/agents/<equipe>/<nome>.md` |
 
-### `mapeamento-processos/` — mapeia processos; solução e construção em fase posterior
+### `mapeamento/` — mapeia o processo atual e entrega o mapa
 
 | Agente | O que faz | O que entrega |
 |---|---|---|
 | `lider-de-mapeamento` | Conduz as 9 etapas, confere entregas, registra aprovações e coordena correções | `<pasta-do-processo>/status.md` e resumo final |
 | `analista-de-processos` | Faz perguntas abertas, coleta fontes em leitura, modela e classifica o processo atual, com impacto estimado e validação humana | Entrevista, coleta, PDD, diagramas de trabalho e `classificacao.md` |
-| `designer-de-documentos` | Produz documento enxuto e PDF, com etapas descritivas e classificação | `mapeamento.md`, `mapeamento.html` e PDF de validação ou final |
-| `revisor-qa` | Confere fidelidade, classes, estimativas, privacidade e PDF. Só lê e aponta; também revisa construções quando solicitadas | Veredito Aprovado/Devolver, com arquivo e linha |
-| `arquiteto-de-automacao` | Só após pedido explícito de solução: desenha o processo futuro e propõe ferramentas; tarefas somente se aceitas | `tobe.md` e, se aceita, `todo.md`, na pasta selecionada |
-| `engenheiro-de-automacao` | Só após aprovação do plano e da construção: executa uma tarefa por vez, com dado de teste | `automacao/<nome>/` com o fluxo/script e `LEIAME.md` |
+| `redator-de-mapa` | Produz documento enxuto e PDF, com etapas descritivas e classificação | `mapeamento.md`, `mapeamento.html` e PDF de validação ou final |
+| `revisor-de-mapa` | Confere fidelidade, classes, estimativas, privacidade e PDF. Só lê e aponta; também revisa construções quando solicitadas | Veredito Aprovado/Devolver, com arquivo e linha |
 
 ### `pop/` — transforma o mapa validado em POP
 
@@ -35,18 +33,25 @@ Cada equipe (squad) é uma pasta em `.claude/agents/<equipe>/`. Para levar uma e
 
 Ordem: `redator-de-pop` → `revisor-de-pop` → validação de quem executa → aprovação do dono do processo (pessoas, não agentes). Lacuna de fato do processo atual volta ao `analista-de-processos`. Rode os dois nesta conversa.
 
+### `automacao/` — desenha e constrói a solução, só sob pedido
+
+| Agente | O que faz | O que entrega |
+|---|---|---|
+| `arquiteto-de-automacao` | Só após pedido explícito de solução: desenha o processo futuro e propõe ferramentas; tarefas somente se aceitas | `tobe.md` e, se aceita, `todo.md`, na pasta selecionada |
+| `engenheiro-de-automacao` | Só após aprovação do plano e da construção: executa uma tarefa por vez, com dado de teste | `automacao/<nome>/` com o fluxo/script e `LEIAME.md` |
+
 ## Como rodar um mapeamento
 
 **Comece pelo líder:** `/mapear <processo ou pasta>`. Ele identifica a pasta certa e retoma pelo status e pelas evidências dela.
 
 Fluxo padrão: abertura → preparação → entrevista → modelagem → validação do processo (GATE) → classificação (GATE) → documento e PDF (GATE de nome e data) → QA → entrega.
 
-O líder conduz `analista-de-processos` → `designer-de-documentos` → `revisor-qa`. O método e o modelo de saída estão em `Aula-01/Mapeamentos/prompt-mapeamento-de-processos.md`; leia o trecho entre os delimitadores como referência, sem reiniciar a abertura ao retomar. Para seleção de pasta e condução dos agentes, siga o líder.
+O líder conduz `analista-de-processos` → `redator-de-mapa` → `revisor-de-mapa`. O método e o modelo de saída estão em `metodo/prompt-mapeamento-de-processos.md`; leia o trecho entre os delimitadores como referência, sem reiniciar a abertura ao retomar. Para seleção de pasta e condução dos agentes, siga o líder.
 
 - Rode cada agente **nesta conversa**, lendo sua definição. O líder mantém as perguntas e os gates; o revisor faz uma passagem separada de leitura dos arquivos salvos. Não delegue entrevistas para subagentes.
 - Prefira uma pergunta aberta por vez ou um bloco curto relacionado. Pare nos gates; não repita perguntas nem aprovações já registradas para o mesmo conteúdo. Antes de alterar recursos, explique o escopo e obtenha aprovação, conforme a regra global.
-- Novos trabalhos ficam em `Mapeamentos/<aaaa-mm-dd>-<slug-do-processo>/`, preservando a capitalização existente. Não mova, converta, sobrescreva nem consolide mapeamentos anteriores sem aprovação específica. Automações construídas ficam em `automacao/`.
-- O `/mapear` termina na entrega revisada. Só depois de um pedido explícito de solução entra o `arquiteto-de-automacao`; construção tem aprovação própria e revisão do `revisor-qa` por tarefa.
+- Novos trabalhos ficam em `<pasta-da-aula-atual>/<slug-do-processo>/` (ex.: `Aula-02/organizacao-semana-dias-gestor/`), com o mapa, o POP e os materiais do mesmo processo juntos. As pastas das aulas seguem o padrão `Aula-NN`. Não mova, converta, sobrescreva nem consolide mapeamentos anteriores sem aprovação específica. Automações construídas ficam em `automacao/`.
+- O `/mapear` termina na entrega revisada. Só depois de um pedido explícito de solução entra o `arquiteto-de-automacao`; construção tem aprovação própria e revisão do `revisor-de-mapa` por tarefa.
 
 ## Como montar ou mudar a equipe
 

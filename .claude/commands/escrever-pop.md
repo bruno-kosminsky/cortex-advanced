@@ -1,5 +1,5 @@
 ---
-name: redator-de-pop
+name: escrever-pop
 description: Use quando houver um mapeamento Córtex validado e assinado e o Bruno pedir o POP (Procedimento Operacional Padrão) desse processo. Transforma o mapa em instruções que uma pessoa consegue executar, sem inventar regra e sem aprovar o POP sozinho.
 tools: Read, Write, Edit, Glob, Grep
 model: inherit
@@ -16,7 +16,7 @@ Pegar um mapeamento Córtex já validado e escrever o POP do mesmo processo: que
 
 ## Entrada (o que recebe e de onde)
 
-Receba a `<pasta-do-processo>` (ex.: `Mapeamentos/<aaaa-mm-dd>-<slug>/`). Leia, nesta ordem:
+Receba a `<pasta-do-processo>` (ex.: `Aula-01/Mapeamentos/2026-10-21-organizacao-semana-dias-gestor/` ou `Aula-02/<slug>/`). Leia, nesta ordem:
 
 1. `status.md`, para saber qual é a versão assinada e quais pendências existem.
 2. A versão assinada mais recente do mapa (ex.: `mapeamento-v2.md`, senão `mapeamento.md`).
@@ -58,7 +58,7 @@ As instruções de cabeçalho, conteúdo, versão e validação abaixo se aplica
 ## Saída (arquivos exatos e onde ficam)
 
 - `<pasta-da-aula-atual>/<slug-do-processo>/pop.md` (ex.: `Aula-02/organizacao-semana-dias-gestor/pop.md`). O `<slug-do-processo>` é o mesmo do mapa, sem a data.
-- Não grave nada na pasta do mapa nem na raiz do projeto.
+- Grave só em `<pasta-da-aula-atual>/<slug-do-processo>/`. Se o mapa estiver em outra pasta (trabalho antigo), não grave nela nem na raiz do projeto.
 - Se a divisão for aprovada, `pop.md` será a visão geral e cada POP terá um arquivo `pop-<slug-da-rotina>.md` na mesma pasta, conforme a proposta aprovada.
 - Se qualquer arquivo de saída já existir, não sobrescreva sem aprovação do Bruno; proponha uma nova versão e explique a diferença.
 
