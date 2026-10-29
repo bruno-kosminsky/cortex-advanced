@@ -1,0 +1,10 @@
+# Sistema e configuração local
+.DS_Store
+.claude/settings.local.json
+.claude/backups/
+
+# Saídas dos agentes, mapeamentos e POPs ficam fora do repositório
+Aula-01/
+Aula-02/
+Mapeamentos/
+relatorio-rh-*.md
