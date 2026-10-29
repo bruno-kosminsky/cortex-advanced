@@ -4,7 +4,11 @@
 .claude/backups/
 
 # Saídas dos agentes, mapeamentos e POPs ficam fora do repositório
-Aula-01/
+# (exceção: o prompt de método que as equipes usam)
+Aula-01/*
+!Aula-01/Mapeamentos/
+Aula-01/Mapeamentos/*
+!Aula-01/Mapeamentos/prompt-mapeamento-de-processos.md
 Aula-02/
-Mapeamentos/
+/Mapeamentos/
 relatorio-rh-*.md
